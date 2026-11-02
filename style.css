@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #FFE6E6;
+    background-color: #ecc9c9b6;
 }
 
 .icon-link {
@@ -149,4 +149,50 @@ body {
     width: 80rem;
     height: 60rem;
     border-radius: 1rem;
+}
+
+.gallery-section {
+    margin: 5rem auto;
+    width: 80%;
+    text-align: center;
+}
+
+.gallery-title {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 6rem;
+    margin-top: 12rem;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 1rem;
+    width: 17vw;
+    height: 50rem;
+    background-color: black;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-image {
+    max-width: 97%;
+    max-height: 97%;
+    object-fit: contain;
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+
+h3 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: white;
+    margin-top: 1.5rem;
 }
