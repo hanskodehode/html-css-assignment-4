@@ -13,19 +13,25 @@ body {
     color: black;
 }
 
+/* Header Styling */
 .header-styling {
-    width: 100vw;
-    height: 3rem;
+    width: 30vw;
+    height: 4rem;
     display: flex;
     flex-direction: row;
-
+    margin: 0 auto;
     gap: 7rem;
     align-items: center;
     justify-content: center;
+    background-color: #fcc8c8;
+    border-radius: 0 0 1rem 1rem;
+    opacity: 0.5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Home Button Styling */
 .home-button {
-    background-color: #d4a3a3;
+    background-color: #bb8080;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +39,7 @@ body {
     width: 5rem;
     border-radius: 4rem;
     margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .home-button-css {
@@ -41,8 +48,9 @@ body {
     font-family: "Lexend Deca", sans-serif;
 }
 
+/* Order Button Styling */
 .order-button {
-    background-color: #d4a3a3;
+    background-color: #bb8080;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,6 +58,7 @@ body {
     width: 5rem;
     border-radius: 4rem;
     margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .order-button-css {
@@ -58,8 +67,9 @@ body {
     font-family: "Lexend Deca", sans-serif;
 }
 
+/* About Button Styling */
 .about-button {
-    background-color: #d4a3a3;
+    background-color: #bb8080;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,6 +77,7 @@ body {
     width: 5rem;
     border-radius: 4rem;
     margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .about-button-css {
@@ -75,8 +86,9 @@ body {
     font-family: "Lexend Deca", sans-serif;
 }
 
+/* Contact Button Styling */
 .contact-button {
-    background-color: #d4a3a3;
+    background-color: #bb8080;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,10 +96,30 @@ body {
     width: 5rem;
     border-radius: 4rem;
     margin-top: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .contact-button-css {
     text-decoration: none;
     color: black;
     font-family: "Lexend Deca", sans-serif;
+}
+
+/* Hero Section Styling */
+.hero {
+    background-color: #d4a3a3;
+    width: 80.2rem;
+    height: 60.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10rem auto 0;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-image {
+    width: 80rem;
+    height: 60rem;
+    border-radius: 1rem;
 }
