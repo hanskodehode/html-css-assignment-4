@@ -13,13 +13,40 @@ body {
     color: black;
 }
 
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.header-title {
+    position: absolute;
+    left: 6rem;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.logo {
+    position: absolute;
+    left: 1rem;
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
 /* Header Styling */
 .header-styling {
     width: 30vw;
     height: 4rem;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 0;
     gap: 7rem;
     align-items: center;
     justify-content: center;
