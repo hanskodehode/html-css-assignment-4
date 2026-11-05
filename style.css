@@ -164,20 +164,26 @@ body {
   margin-top: 12rem;
 }
 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
 /* Gallery card styling */
 .gallery-item {
-  display: inline-block;
-  margin: 1rem;
-  width: 17vw;
-  height: 50rem;
+  flex: 1 1 18rem;
+  max-width: 25rem;
+  height: 40rem;
   background-color: black;
   border-radius: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .gallery-image {
-  max-width: 97%;
-  max-height: 97%;
+  max-width: 96%;
+  max-height: 96%;
   object-fit: contain;
   border-radius: 1rem;
   margin: 0.5rem;
@@ -198,4 +204,16 @@ p {
   margin-top: 0.5rem;
   color: white;
   margin-top: 1.5rem;
+}
+
+.order-button-gallery-box {
+  height: 40px;
+  width: 60%;
+  display: flex;
+  background-color: gray;
+}
+
+.order-gallery-button {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
 }
