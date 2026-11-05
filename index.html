@@ -55,7 +55,7 @@
             <li>Lim</li>
           </ul>
           <p>400,- kr</p>
-          <button type="button" class="order-gallery-button" id="order-button">
+          <button type="button" class="order-gallery-button" id="open-order">
             Order now
           </button>
         </div>
@@ -73,6 +73,9 @@
             <li>Pensler</li>
           </ul>
           <p>200,- kr</p>
+          <button type="button" class="order-gallery-button">
+            Order now
+          </button>
         </div>
         <div class="gallery-item">
           <img
@@ -88,6 +91,9 @@
             <li>Pensler</li>
           </ul>
           <p>300,- kr</p>
+          <button type="button" class="order-gallery-button">
+            Order now
+          </button>
         </div>
       </div>
     </section>
@@ -119,7 +125,7 @@
             <option value="Lerretsmaling">Lerretsmaling</option>
         </select>
 
-        <button id="close-button">Close</button>
+        <button type="button" id="close-order">Close</button>
         <button type="submit">Submit Order</button>
       </form>
     </dialog>
@@ -128,8 +134,10 @@
 
   const dialog = document.querySelector("#order-dialog");
 
-  document.querySelector("#open-order").addEventListener("click", () => {
+  document.querySelectorAll(".order-gallery-button").forEach((button) => {
+    button.addEventListener("click", () => {
     dialog.showModal();
+    });
   });
 
   document.querySelector("#close-order").addEventListener("click", () => {
