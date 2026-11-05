@@ -47,8 +47,17 @@
             src="assets/City.jpg"
             alt="Painting of a City"
           />
-          <h3>City Painting</h3>
-          <p>A beautiful depiction of a bustling cityscape.</p>
+          <h3>Mosaikkunst</h3>
+          <ul>
+            <li>Ramme</li>
+            <li>Treplate i A4</li>
+            <li>Små fargede steiner</li>
+            <li>Lim</li>
+          </ul>
+          <p>400,- kr</p>
+          <button type="button" class="order-gallery-button" id="order-button">
+            Order now
+          </button>
         </div>
         <div class="gallery-item">
           <img
@@ -56,8 +65,14 @@
             src="assets/City-Abstract.jpg"
             alt="Painting of a City"
           />
-          <h3>City Abstract Painting</h3>
-          <p>A beautiful depiction of an abstract cityscape.</p>
+          <h3>Akvarellmaling</h3>
+         <ul>
+            <li>Ramme</li>
+            <li>Akvarellpapir med designmal</li>
+            <li>Akvarellfarger</li>
+            <li>Pensler</li>
+          </ul>
+          <p>200,- kr</p>
         </div>
         <div class="gallery-item">
           <img
@@ -65,11 +80,14 @@
             src="assets/River.jpg"
             alt="Painting of a City"
           />
-          <h3>City Painting</h3>
-          <p>A beautiful depiction of a river running through nature.</p>
-          <div class="order-button-gallery-box">
-            <a class="order-gallery-button" href="#order.hmtl">Order now</a>
-          </div>
+          <h3>Lerretsmaling</h3>
+          <ul>
+            <li>Ramme</li>
+            <li>Akrylpapir med designmal</li>
+            <li>Akrylfarger</li>
+            <li>Pensler</li>
+          </ul>
+          <p>300,- kr</p>
         </div>
       </div>
     </section>
@@ -84,5 +102,47 @@
         >
       </p>
     </footer>
+
+    <dialog id="order-dialog">
+      <form id="order-form" method="dialog">
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="workshop">Select Painting:</label>
+        <select id="workshop" name="workshop" required>
+            <option value="Mosaikkunst">Mosaikkunst</option>
+            <option value="Akvarellmaling">Akvarellmaling</option>
+            <option value="Lerretsmaling">Lerretsmaling</option>
+        </select>
+
+        <button id="close-button">Close</button>
+        <button type="submit">Submit Order</button>
+      </form>
+    </dialog>
+    <script>
+
+
+  const dialog = document.querySelector("#order-dialog");
+
+  document.querySelector("#open-order").addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  document.querySelector("#close-order").addEventListener("click", () => {
+    dialog.close();
+  });
+
+  document.querySelector("#order-form").addEventListener("submit", (event) => {
+    event.preventDefault(); // Stops the page reloading; this doesn't send the order.
+    alert("Thanks! Your order form is ready to be connected to a service.");
+    dialog.close();
+  });
+
+  
+</script>
   </body>
 </html>

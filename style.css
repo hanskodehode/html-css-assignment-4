@@ -201,7 +201,7 @@ h3 {
 p {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1rem;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
   color: white;
   margin-top: 1.5rem;
 }
@@ -216,4 +216,15 @@ p {
 .order-gallery-button {
   font-family: "Lexend Deca", sans-serif;
   color: white;
+}
+
+ul {
+  margin-top: 2rem;
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
